@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import LandingSnippet from './components/LandingSnippet'
 import Documentation from './components/Documentation'
 import Features from './components/Features';
+import About from './components/About';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
             <LandingSnippet  />
             <Features />
             <Documentation />
+            <About  />
+            <Footer />
           </div>
 
       </div>

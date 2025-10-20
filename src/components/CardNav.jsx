@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { GoArrowUpRight } from 'react-icons/go';
+import ElectricBorder from './ElectricBorder';
 
 const CardNav = ({
   logo,
@@ -143,21 +144,32 @@ const CardNav = ({
             tabIndex={0}
             style={{ color: menuColor || '#000' }}
           >
-            <div className="hamburger-line" />
-            <div className="hamburger-line" />
+            <div className="hamburger-line bg-violet-700!" />
+            <div className="hamburger-line bg-violet-700!" />
           </div>
 
-          <div className="logo-container">
+          <div className="logo-container flex flex-col items-center">
             <p className='pb-1 text-violet-800 text-4xl font-bold'>UniMaze</p>
+            <p className='-mt-3 text-blue-700 font-normal'>by Group 3:11</p>
           </div>
 
-          <button
-            type="button"
-            className="card-nav-cta-button hover:bg-violet-800!"
-            style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
-          >
-            Start Game
-          </button>
+          <ElectricBorder
+            color="#7A1EB8"
+            speed={2}
+            chaos={0.3}
+            thickness={4}
+            style={{ borderRadius: 10 }}
+          > 
+            <div>
+            <button
+              type="button"
+              className="card-nav-cta-button bg-violet-700! hover:bg-violet-900!"
+              style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+            >
+              Start Game
+            </button>
+            </div>
+          </ElectricBorder>
         </div>
 
         <div className="card-nav-content" aria-hidden={!isExpanded}>

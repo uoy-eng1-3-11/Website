@@ -1,4 +1,6 @@
+import { href } from 'react-router-dom';
 import CardNav from './CardNav'
+import ElectricBorder from './ElectricBorder';
 
 const Navbar = () => {
   const items = [
@@ -7,8 +9,9 @@ const Navbar = () => {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Maze", ariaLabel: "About Company", href: "#features" },
-        { label: "Events", ariaLabel: "About Careers" }
+        { label: "Maze", ariaLabel: "Maze", href: "#features" },
+        { label: "Events", ariaLabel: "Events", href : "#features" },
+        { label: "Halfway Checkpoint", ariaLabel: "Halfway Checkpoint", href: "#features" }
       ]
     },
     {
@@ -27,23 +30,24 @@ const Navbar = () => {
       bgColor: "#271E37", 
       textColor: "#fff",
       links: [
+        { label: "Overview", ariaLabel: "Overview", href:'#about'},
         { label: "Github", ariaLabel: "Github", href:'https://github.com/uoy-eng1-3-11'},
-        { label: "Team", ariaLabel: "Team" }
+        { label: "Team", ariaLabel: "Team", href: "#about" }
       ]
     }
   ];
 
   return (
-    <CardNav
-      logo={'/pattern.jpg'}
-      logoAlt="Company Logo"
-      items={items}
-      baseColor="#fff"
-      menuColor="#000"
-      buttonBgColor="#111"
-      buttonTextColor="#fff"
-      ease="power3.out"
-    />
+          <CardNav 
+            logo={'/pattern.jpg'}
+            logoAlt="Logo"
+            items={items}
+            baseColor="#fff"
+            menuColor="#000"
+            buttonBgColor="#111"
+            buttonTextColor="#fff"
+            ease="power3.out"
+          />
   );
 };
 
