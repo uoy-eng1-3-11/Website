@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 
 const springValues = {
@@ -17,12 +17,14 @@ export default function TiltedCard({
   imageWidth = '300px',
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
-  showMobileWarning = true,
+  showMobileWarning = false,
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false
 }) {
   const ref = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   const x = useMotionValue();
   const y = useMotionValue();
@@ -38,8 +40,20 @@ export default function TiltedCard({
 
   const [lastY, setLastY] = useState(0);
 
+  useEffect(() => {
+    const checkDevice = () => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 640);
+      setIsTablet(width > 640 && width <= 1024);
+    };
+    
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
+    return () => window.removeEventListener('resize', checkDevice);
+  }, []);
+
   function handleMouse(e) {
-    if (!ref.current) return;
+    if (!ref.current || isMobile || isTablet) return;
 
     const rect = ref.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left - rect.width / 2;
@@ -60,11 +74,13 @@ export default function TiltedCard({
   }
 
   function handleMouseEnter() {
+    if (isMobile || isTablet) return;
     scale.set(scaleOnHover);
     opacity.set(1);
   }
 
   function handleMouseLeave() {
+    if (isMobile || isTablet) return;
     opacity.set(0);
     scale.set(1);
     rotateX.set(0);
@@ -72,30 +88,56 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
+  // Calculate responsive dimensions
+  const getResponsiveDimensions = () => {
+    if (isMobile) {
+      return {
+        width: '100%',
+        height: 'auto',
+        maxWidth: '280px'
+      };
+    }
+    if (isTablet) {
+      return {
+        width: '100%',
+        height: 'auto',
+        maxWidth: '400px'
+      };
+    }
+    return {
+      width: imageWidth,
+      height: imageHeight,
+      maxWidth: 'none'
+    };
+  };
+
+  const dimensions = getResponsiveDimensions();
+
   return (
     <figure
       ref={ref}
-      className="tilted-card-figure"
+      className="tilted-card-figure "
       style={{
-        height: containerHeight,
+        height: isMobile || isTablet ? 'auto' : containerHeight,
         width: containerWidth
       }}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {showMobileWarning && (
+      {showMobileWarning && (isMobile || isTablet) && (
         <div className="tilted-card-mobile-alert">This effect is not optimized for mobile. Check on desktop.</div>
       )}
 
       <motion.div
         className="tilted-card-inner"
         style={{
-          width: imageWidth,
-          height: imageHeight,
-          rotateX,
-          rotateY,
-          scale
+          width: dimensions.width,
+          height: dimensions.height,
+          maxWidth: dimensions.maxWidth,
+          rotateX: (isMobile || isTablet) ? 0 : rotateX,
+          rotateY: (isMobile || isTablet) ? 0 : rotateY,
+          scale: (isMobile || isTablet) ? 1 : scale
         }}
       >
         <motion.img
@@ -103,8 +145,8 @@ export default function TiltedCard({
           alt={altText}
           className="tilted-card-img"
           style={{
-            width: imageWidth,
-            height: imageHeight
+            width: '100%',
+            height: '100%'
           }}
         />
 
@@ -113,7 +155,7 @@ export default function TiltedCard({
         )}
       </motion.div>
 
-      {showTooltip && (
+      {showTooltip && !isMobile && !isTablet && (
         <motion.figcaption
           className="tilted-card-caption"
           style={{
