@@ -63,11 +63,15 @@ const Documentation = () => {
 
   return (
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-      <div id="documentation" className='bg-gradient-to-b from-[#2e2e2e] to-[rgb(123,123,123)] rounded-lg my-10 mx-30 py-5'>
+      <div id="documentation" className='bg-gradient-to-b from-[#2e2e2e] to-[rgb(123,123,123)] rounded-lg my-10 mx-5 sm:max-xl:mx-20 xl:mx-30  py-5'>
         
         <div className='flex flex-col gap-5 items-center justify-center'>
           <h1 className='text-3xl font-bold text-white'>Documentation</h1>
-          <div className='bg-violet-700 rounded-2xl p-2'>
+          <div className='bg-violet-700 rounded-2xl max-lg:py-0 lg:py-2 px-2
+          w-3/4 sm:max-xl:w-3/4 xl:w-auto 
+          max-lg:contain-content 
+          overflow-x-scroll lg:overflow-hidden overflow-y-hidden
+          max-lg:text-xs '>
             <GooeyNav
               items={items}
               particleCount={15}
@@ -82,9 +86,9 @@ const Documentation = () => {
           </div>
 
           {/* Content Section */}
-          <div className='bg-white rounded-2xl p-8 mx-10 w-full max-w-4xl'>
-            <h2 className='text-2xl font-bold mb-4'>{sections[activeSection].title}</h2>
-            <p className='text-gray-700 mb-6'>{sections[activeSection].content}</p>
+          <div className='bg-white rounded-2xl p-8 mx-10 max-lg:w-7/8 lg:w-full max-w-4xl'>
+            <h2 className='max-lg:text-md lg:text-2xl font-bold mb-4'>{sections[activeSection].title}</h2>
+            <p className='max-lg:text-sm lg:text-base text-gray-700 mb-6'>{sections[activeSection].content}</p>
             
             {/* PDF Preview */}
             <div className='border-2 border-gray-300 rounded-lg overflow-hidden mb-4'>
@@ -96,14 +100,16 @@ const Documentation = () => {
             </div>
 
             {/* Open PDF Button */}
-            <a
-              href={sections[activeSection].pdfPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              className='inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors'
-            >
-              Open Full PDF Document
-            </a>
+            <div className='justify-center flex items-center'>
+              <a
+                href={sections[activeSection].pdfPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='max-lg:text-xs lg:text-base inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors'
+              >
+                Open Full PDF Document
+              </a>
+            </div>
           </div>
         </div>
 

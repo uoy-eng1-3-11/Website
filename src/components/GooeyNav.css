@@ -59,6 +59,7 @@
     box-shadow 0.3s ease;
   box-shadow: 0 0 0.5px 1.5px transparent;
   color: white;
+  margin: auto;
 }
 
 .gooey-nav-container nav ul li a {
@@ -83,7 +84,7 @@
 }
 
 .gooey-nav-container nav ul li.active {
-  color: black;
+  color: white;
   text-shadow: none;
 }
 
