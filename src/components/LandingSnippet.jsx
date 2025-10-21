@@ -20,7 +20,7 @@ const LandingSnippet = () => {
       } else if (width <= 1024) {
         // Tablet
         setContainerDimensions({
-          height: '250px',
+          height: '200px',
           width: '100%'
         });
       } else {
@@ -53,7 +53,7 @@ const LandingSnippet = () => {
         showTooltip={true}
         displayOverlayContent={true}
         overlayContent={
-            <p className="text-white text-3xl md:text-2xl sm:text-xl font-bold pl-10 md:pl-6 sm:pl-4 pt-4 md:pt-3 sm:pt-2 text-shadow-black">
+            <p className="text-white text-3xl md:text-2xl sm:text-xl max-sm:text-sm font-bold pl-10 max-sm:text-center max-sm:pl-0 pt-4 md:pt-3 sm:pt-2 text-shadow-black">
                 UniMaze - Gameplay Snippet
             </p>
         }
