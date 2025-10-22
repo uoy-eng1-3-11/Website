@@ -67,7 +67,7 @@ const Documentation = () => {
         
         <div className='flex flex-col gap-5 items-center justify-center'>
           <h1 className='text-3xl font-bold text-white'>Documentation</h1>
-          <div className='bg-violet-700 rounded-2xl max-lg:py-0 lg:py-2 px-2
+          <div className='max-xl:bg-black xl:bg-violet-700 rounded-2xl max-lg:py-0 lg:py-2 px-2
           w-3/4 sm:max-xl:w-3/4 xl:w-auto 
           max-lg:contain-content 
           overflow-x-scroll lg:overflow-hidden overflow-y-hidden
