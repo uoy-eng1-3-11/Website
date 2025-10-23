@@ -63,7 +63,7 @@ const Documentation = () => {
 
   return (
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-      <div id="documentation" className='bg-gradient-to-b from-[#2e2e2e] to-[rgb(123,123,123)] rounded-lg my-10 mx-5 sm:max-xl:mx-20 xl:mx-30  py-5'>
+      <div id="documentation" className='bg-gradient-to-b from-[#2e2e2e] to-[rgb(123,123,123)] rounded-lg my-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80  py-5'>
         
         <div className='flex flex-col gap-5 items-center justify-center'>
           <h1 className='text-3xl font-bold text-white'>Documentation</h1>
