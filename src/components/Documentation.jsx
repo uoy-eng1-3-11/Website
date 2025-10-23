@@ -10,6 +10,7 @@ const Documentation = () => {
     { label: "Architecture", href: "#architecture" },
     { label: "Method selection and planning", href: "#method" },
     { label: "Risk assessment and mitigation", href: "#risk" },
+    { label: "Implementation", href: "#implementation" }
   ];
 
   const sections = [
@@ -36,6 +37,12 @@ const Documentation = () => {
       title: "Risk Assessment and Mitigation",
       content: "Here is the risk assessment documentation...",
       pdfPath: "/Risk1.pdf"
+    },
+    {
+      id: "implementation",
+      title: "Implementation",
+      content: "Here is the implementation documentation...",
+      pdfPath: "/Req1.pdf"
     }
   ];
 

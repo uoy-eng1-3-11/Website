@@ -34,7 +34,7 @@ const About = () => {
         threshold={0.2}
         delay={0.15}
         >
-        <div id="about" className='bg-gradient-to-b from-[rgb(66,82,113)] to-[#2e2e2eb2] rounded-lg mt-10 max-lg:mx-5 lg:mx-30 xl:mx-30 2xl:mx-80 mb-10 contain-content'>
+        <div id="about" className='bg-gradient-to-b from-[rgb(66,82,113)] to-[#2e2e2eb2] rounded-lg mt-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80 mb-10 contain-content'>
             <div className='bg-gradient-to-b from-[#318eff5b] to-[#4c3bff5b] py-4'>
                     <h1 className='text-3xl text-white font-bold text-center'>About</h1>
             </div>

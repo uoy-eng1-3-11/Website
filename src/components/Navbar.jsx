@@ -22,7 +22,8 @@ const Navbar = () => {
         { label: "Requirements", ariaLabel: "Requirements", href: '#requirements' },
         { label: "Architecture", ariaLabel: "Architecture", href: '#architecture' },
         { label: "Method selection and planning", ariaLabel: "Method selection and planning", href: '#method' },
-        { label: "Risk assessment and mitigation", ariaLabel: "Risk assessment and mitigation", href: '#risk' }
+        { label: "Risk assessment and mitigation", ariaLabel: "Risk assessment and mitigation", href: '#risk' },
+        { label: "Implementation", ariaLabel: "Implementation", href: '#implementation' }
       ]
     },
     {
