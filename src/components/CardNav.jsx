@@ -163,7 +163,7 @@ const CardNav = ({
             <div>
             <button
               type="button"
-              className="card-nav-cta-button bg-violet-700! hover:bg-violet-900!"
+              className="card-nav-cta-button bg-violet-700! hover:bg-violet-900! sm:max-lg:text-sm lg:text-base"
               style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
             >
               Start Game
