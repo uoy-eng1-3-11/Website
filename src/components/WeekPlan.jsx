@@ -5,7 +5,7 @@ const WeekPlan = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     { src: '/weeklyplan-sheet.png', alt: 'Week Plan 1' },
-    { src: '/weeklyplan-sheet.png', alt: 'Week Plan 2' }
+    { src: '/weeklyplan-table.png', alt: 'Week Plan 2' }
   ];
 
   // Auto-advance carousel every 5 seconds
