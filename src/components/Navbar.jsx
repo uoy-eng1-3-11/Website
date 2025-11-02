@@ -31,6 +31,7 @@ const Navbar = () => {
       bgColor: "#271E37", 
       textColor: "#fff",
       links: [
+        { label: "Weekly Plan", ariaLabel: "Weekly Plan", href:'#weekly-plan'},
         { label: "Overview", ariaLabel: "Overview", href:'#about'},
         { label: "Github", ariaLabel: "Github", href:'https://github.com/uoy-eng1-3-11'},
         { label: "Team", ariaLabel: "Team", href: "#about" }
