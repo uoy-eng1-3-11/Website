@@ -48,17 +48,17 @@ const WeekPlan = () => {
             
             <div className='relative w-full max-w-4xl'>
                 {/* Carousel Container */}
-                <div className='relative overflow-hidden rounded-lg'>
+                <div className='relative overflow-hidden rounded-4xl bg-[#ffffff09] h-[200px] md:h-[400px] lg:h-[550px]'  >
                     <div 
-                        className='flex transition-transform duration-500 ease-in-out'
+                        className='flex transition-transform duration-500 ease-in-out h-full'
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                     >
                         {images.map((image, index) => (
-                            <div key={index} className='min-w-full'>
+                            <div key={index} className='min-w-full h-full flex items-center justify-center p-4'>
                                 <img 
                                     src={image.src} 
                                     alt={image.alt}
-                                    className='w-full h-auto object-cover rounded-lg'
+                                    className='max-w-full max-h-full object-contain rounded-lg'
                                 />
                             </div>
                         ))}
@@ -67,7 +67,7 @@ const WeekPlan = () => {
                     {/* Previous Button */}
                     <button
                         onClick={goToPrevious}
-                        className='absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110'
+                        className='absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-10'
                         aria-label='Previous slide'
                     >
                         <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -78,7 +78,7 @@ const WeekPlan = () => {
                     {/* Next Button */}
                     <button
                         onClick={goToNext}
-                        className='absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110'
+                        className='absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-10'
                         aria-label='Next slide'
                     >
                         <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
