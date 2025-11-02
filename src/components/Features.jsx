@@ -72,7 +72,7 @@ const Features = () => {
                         </Card>
                         <Card>
                             <h3 className='text-white font-bold text-2xl pl-4 py-2'>Clean Code</h3>
-                            <img src='/test-game.jpg' alt='Maze part 3' />
+                            <img src='/test-code.png' alt='Maze part 3' />
                         </Card>
                     </CardSwap>
                     )}
