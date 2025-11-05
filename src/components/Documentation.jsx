@@ -68,6 +68,12 @@ const Documentation = () => {
     window.history.pushState(null, '', `#${sections[index].id}`);
   };
 
+  const handleOpenPDF = (e) => {
+    e.preventDefault();
+    const pdfUrl = sections[activeSection].pdfPath;
+    window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
       <div id="documentation" className='bg-gradient-to-b from-[#2e2e2e] to-[rgb(123,123,123)] rounded-lg my-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80  py-5'>
@@ -108,14 +114,12 @@ const Documentation = () => {
 
             {/* Open PDF Button */}
             <div className='justify-center flex items-center'>
-              <a
-                href={sections[activeSection].pdfPath}
-                target="_blank"
-                rel="noopener noreferrer"
-                className='max-lg:text-xs lg:text-base inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors'
+              <button
+                onClick={handleOpenPDF}
+                className='max-lg:text-xs lg:text-base inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors cursor-pointer'
               >
                 Open Full PDF Document
-              </a>
+              </button>
             </div>
           </div>
         </div>

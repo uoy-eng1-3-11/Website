@@ -41,19 +41,19 @@ const Features = () => {
                 </div>
                 <div className='' style={{ height: '500px', position: 'relative' }} >
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-4 max-sm:text-xl'>🧩Maze</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>Explore the vast maze based on the University of York's East Campus</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>Where the seasons change and the paths intertwine</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>Escape from professors and find your way to freedom</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>Stumble upon hidden events and surprises</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Explore the vast maze based on the University of York's East Campus</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Where the seasons change and the paths intertwine</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Escape from professors and find your way to freedom</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Stumble upon hidden events and surprises</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10  max-sm:pl-5 pt-6 max-sm:text-xl'>💥Events</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>Challenge is what excites!</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>Earn rewards by successfully completing events</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>The stakes are high! Don't miss out on the fun</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Challenge is what excites!</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Earn rewards by successfully completing events</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸The stakes are high! Don't miss out on the fun</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-6 max-sm:text-xl'>✅High Quality Code</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>Adopting a new codebase seems daunting?</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>Don't worry! Our code is well-documented, scalable and easy to understand.</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Adopting a new codebase seems daunting?</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Don't worry! Our code is well-documented, scalable and easy to understand.</p>
 
                     {!isMobile && (
                     <CardSwap

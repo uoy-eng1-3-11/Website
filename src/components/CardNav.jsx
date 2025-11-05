@@ -149,7 +149,7 @@ const CardNav = ({
           </div>
 
           <div className="logo-container flex flex-col items-center">
-            <p className='pb-1 text-violet-800 text-4xl font-bold'>UniMaze</p>
+            <p className='pb-1 text-violet-800 text-4xl font-bold'>🔹UniMaze🔹</p>
             <p className='-mt-3 text-blue-700 font-normal'>by Group 3:11</p>
           </div>
 
