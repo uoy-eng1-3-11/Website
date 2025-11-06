@@ -52,31 +52,33 @@ const Features = () => {
                     <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸The stakes are high! Don't miss out on the fun</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-6 max-sm:text-xl'>✅High Quality Code</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Adopting a new codebase seems daunting?</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Don't worry! Our code is well-documented, scalable and easy to understand.</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Adopting a new codebase seems daunting? Don't worry! </p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Our code is well-documented, scalable and easy to understand.</p>
 
                     {!isMobile && (
-                    <CardSwap
-                        cardDistance={60}
-                        verticalDistance={70}
-                        delay={5000}
-                        pauseOnHover={false}
-                    >
-                        <Card>
-                            <h3 className='text-white font-bold text-2xl pl-4 py-2'>Maze</h3>
-                            <img src='/test-game.jpg' alt='Maze part 1' />
-                        </Card>
-                        <Card>
-                            <h3 className='text-white font-bold text-2xl pl-4 py-2'>Events</h3>
-                            <img src='/test-game.jpg' alt='Maze part 2' />
-                        </Card>
-                        <Card>
-                            <h3 className='text-white font-bold text-2xl pl-4 py-2'>Clean Code</h3>
-                            <img src='/test-code.png' alt='Maze part 3' />
-                        </Card>
-                    </CardSwap>
-                    )}
+                    <div className='absolute top-5/6 left-11/12 transform -translate-x-1/2 -translate-y-1/2'>
+                        <CardSwap
+                            cardDistance={60}
+                            verticalDistance={70}
+                            delay={5000}
+                            pauseOnHover={false}
+                        >
+                            <Card>
+                                <h3 className='text-white font-bold text-2xl pl-4 py-2'>Maze</h3>
+                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/test-game.jpg' alt='Maze part 1' />
+                            </Card>
+                            <Card>
+                                <h3 className='text-white font-bold text-2xl pl-4 py-2'>Events</h3>
+                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/test-game.jpg' alt='Maze part 2' />
+                            </Card>
+                            <Card>
+                                <h3 className='text-white font-bold text-2xl pl-4 py-2'>Clean Code</h3>
+                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/code.png' alt='Maze part 3' />
+                            </Card>
+                        </CardSwap>
                     </div>
+                    )}
+                </div>
             </div>
         </AnimatedContent>
     )
