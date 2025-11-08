@@ -107,7 +107,7 @@ const Documentation = () => {
             <div className='border-2 border-gray-300 rounded-lg overflow-hidden mb-4'>
               <iframe
                 src={`${sections[activeSection].pdfPath}#view=FitH`}
-                className='w-full h-120'
+                className='w-full sm:h-50 md:h-94 lg:h-96 xl:h-120 2xl:h-160 '
                 title={`${sections[activeSection].title} PDF Preview`}
               />
             </div>
