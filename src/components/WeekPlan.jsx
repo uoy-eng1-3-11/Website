@@ -4,7 +4,7 @@ import AnimatedContent from './AnimatedContent';
 const WeekPlan = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    { src: '/weeklyplan-sheet.png', alt: 'Week Plan 1' },
+    { src: '/ganttchart.jpg', alt: 'Week Plan 1' },
     { src: '/weeklyplan-table.png', alt: 'Week Plan 2' }
   ];
 

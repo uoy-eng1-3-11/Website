@@ -34,16 +34,18 @@ const About = () => {
         threshold={0.2}
         delay={0.15}
         >
-        <div id="about" className='bg-gradient-to-b from-[rgb(66,82,113)] to-[#2e2e2eb2] rounded-lg mt-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80 mb-10 contain-content'>
+        <div id="about" className='bg-gradient-to-b from-[rgb(66,82,113)] to-[#2e2e2eb2] rounded-lg mt-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80 mb-10 h-full'>
             <div className='bg-gradient-to-b from-[#318eff5b] to-[#4c3bff5b] py-4'>
                     <h1 className='text-3xl text-white font-bold text-center'>About</h1>
             </div>
-            <div style={{ height: '500px', position: 'relative' }} >
-                <h1 className='max-lg:text-md lg:text-3xl text-white font-bold pl-10 pt-6'>UniMaze: A brief overview</h1>
-                <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-4'>⚪️ Based on the University of York's East Campus</p>
-                <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Built on Java 17 using LibGDX</p>
-                <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ 2D Graphics</p>
-                <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Smooth mechanics</p>
+            <div style={{ height: '675px', position: 'relative' }} >
+                <div>
+                  <h1 className='max-lg:text-md lg:text-3xl text-white font-bold pl-10 pt-6'>UniMaze: A brief overview</h1>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-4'>⚪️ Based on the University of York's East Campus</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Built on Java 17 using LibGDX</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ 2D Graphics</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Smooth mechanics</p>
+                </div>
 
                 <div className='flex flex-row gap-1 items-center pt-9'>
                     <h1 className='max-lg:text-md lg:text-3xl text-white font-bold pl-10 '>Github</h1>
@@ -82,7 +84,16 @@ const About = () => {
                     </div>
                   ))}
                 </div>
+
+                <div>
+                  <h1 className='max-lg:text-md lg:text-3xl text-white font-bold pl-10 pt-6'>Website's guide</h1>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-4'>⚪️ Built on React with JavaScript</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Styled using Tailwind CSS & Framer Motion</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Easy to understand file structure with clear comments</p>
+                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Deployed via Vercel</p>
                 </div>
+
+              </div>
         </div>
     </AnimatedContent>
   )

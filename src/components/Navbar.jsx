@@ -11,7 +11,7 @@ const Navbar = () => {
       links: [
         { label: "Maze", ariaLabel: "Maze", href: "#features" },
         { label: "Events", ariaLabel: "Events", href : "#features" },
-        { label: "Halfway Checkpoint", ariaLabel: "Halfway Checkpoint", href: "#features" }
+        { label: "Code", ariaLabel: "Code", href: "#features" }
       ]
     },
     {
