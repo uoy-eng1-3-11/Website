@@ -192,8 +192,8 @@ const Documentation = () => {
             {/* Carousel - Only show for Architecture section */}
             {currentSection.carouselImages && (
               <div className='relative w-full mb-6 mt-6'>
-                <h3 className='text-xl font-semibold mb-4 text-gray-800'>Architecture Diagrams</h3>
-                <p className='text-sm text-gray-600 mb-4'>Click on any diagram to zoom in</p>
+                <h3 className='text-xl font-extrabold mb-4 text-gray-800'>Architecture Diagrams</h3>
+                <p className='text-sm font-bold text-violet-500 mb-4'>Click on any diagram to zoom in</p>
                 
                 {/* Carousel Container */}
                 <div className='relative overflow-hidden rounded-lg bg-gray-100' style={{ height: '600px' }}>
