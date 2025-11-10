@@ -30,10 +30,13 @@ const Documentation = () => {
       title: "Architecture",
       content: "Here is the architecture documentation...",
       pdfPath: "/Arch1.pdf",
-      // Add carousel images for Architecture section only
+      // Add 5 carousel images for Architecture section
       carouselImages: [
-        { src: '/basicArchitecture.png', alt: 'Architecture Diagram 1' },
-        { src: '/implementedArchitecture.png', alt: 'Architecture Diagram 2' }
+        { src: '/basicArchitectureV1.png', alt: 'Architecture Diagram 1' },
+        { src: '/basicArchitectureV2.png', alt: 'Architecture Diagram 2' },
+        { src: '/basicArchitectureV3.png', alt: 'Architecture Diagram 3' },
+        { src: '/basicArchitectureV4.png', alt: 'Architecture Diagram 4' },
+        { src: '/activityDiagram.png', alt: 'Architecture Diagram 5' }
       ]
     },
     {
@@ -193,7 +196,9 @@ const Documentation = () => {
             {currentSection.carouselImages && (
               <div className='relative w-full mb-6 mt-6'>
                 <h3 className='text-xl font-extrabold mb-4 text-gray-800'>Architecture Diagrams</h3>
-                <p className='text-sm font-bold text-violet-500 mb-4'>Click on any diagram to zoom in</p>
+                <p className='text-sm font-bold text-violet-500 mb-4'>
+                  Click on any diagram to zoom in • {currentImageIndex + 1} / {currentSection.carouselImages.length}
+                </p>
                 
                 {/* Carousel Container */}
                 <div className='relative overflow-hidden rounded-lg bg-gray-100' style={{ height: '600px' }}>
@@ -237,7 +242,7 @@ const Documentation = () => {
                 </div>
 
                 {/* Dots Indicator */}
-                <div className='flex justify-center gap-2 mt-4'>
+                <div className='flex justify-center gap-2 mt-4 flex-wrap'>
                   {currentSection.carouselImages.map((_, index) => (
                     <button
                       key={index}

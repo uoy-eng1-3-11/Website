@@ -3,9 +3,14 @@ import AnimatedContent from './AnimatedContent';
 
 const WeekPlan = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // Updated to 6 images
   const images = [
-    { src: '/ganttchart.jpg', alt: 'Week Plan 1' },
-    { src: '/weeklyplan-table.png', alt: 'Week Plan 2' }
+    { src: '/GanttChart_w1.jpg', alt: 'Week Plan 1' },
+    { src: '/GanttChart_w2.jpg', alt: 'Week Plan 2' },
+    { src: '/GanttChart_w3.jpg', alt: 'Week Plan 3' },
+    { src: '/GanttChart_w4.jpg', alt: 'Week Plan 4' },
+    { src: '/GanttChart_w5.jpg', alt: 'Week Plan 5' },
+    { src: '/GanttChart_w6.jpg', alt: 'Week Plan 6' }
   ];
 
   // Auto-advance carousel every 5 seconds
@@ -45,6 +50,9 @@ const WeekPlan = () => {
                         my-10 mx-5 sm:max-xl:mx-20 xl:mx-30 2xl:mx-80
                         flex flex-col items-center justify-center py-8 px-4'>
             <h1 className="text-3xl font-bold text-white mb-6">Weekly Plan</h1>
+            <p className='text-sm font-bold text-violet-300 mb-4'>
+              {currentIndex + 1} / {images.length}
+            </p>
             
             <div className='relative w-full max-w-4xl'>
                 {/* Carousel Container */}
@@ -88,7 +96,7 @@ const WeekPlan = () => {
                 </div>
 
                 {/* Dots Indicator */}
-                <div className='flex justify-center gap-2 mt-4'>
+                <div className='flex justify-center gap-2 mt-4 flex-wrap'>
                     {images.map((_, index) => (
                         <button
                             key={index}

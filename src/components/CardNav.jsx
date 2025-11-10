@@ -20,7 +20,7 @@ const CardNav = ({
   buttonBgColor,                // CTA button background color (inline style overrides class)
   buttonTextColor,              // CTA button text color (inline style)
   // Place the file in /public (e.g., /public/Req1.pdf) so it’s served statically
-  downloadUrl = '/Req1.pdf',
+  downloadUrl = '/Maze-Game-1.0.0.jar',
   // Optional: specify a filename; if empty, browser derives from URL
   downloadFilename = ''
 }) => {
