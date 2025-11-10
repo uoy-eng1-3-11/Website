@@ -65,11 +65,11 @@ const Features = () => {
                         >
                             <Card>
                                 <h3 className='text-white font-bold text-2xl pl-4 py-2'>Maze</h3>
-                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/test-game.jpg' alt='Maze part 1' />
+                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/End-Tile.png' alt='Maze part 1' />
                             </Card>
                             <Card>
                                 <h3 className='text-white font-bold text-2xl pl-4 py-2'>Events</h3>
-                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/test-game.jpg' alt='Maze part 2' />
+                                <img className='w-[400px] h-[350px] rounded-b-xl' src='/Moving-Quicker.png' alt='Maze part 2' />
                             </Card>
                             <Card>
                                 <h3 className='text-white font-bold text-2xl pl-4 py-2'>Clean Code</h3>

@@ -40,7 +40,7 @@ const LandingSnippet = () => {
   return (
     <div className='flex items-center justify-center px-4 md:px-6 lg:px-0'>
         <TiltedCard
-        imageSrc="/test-game.jpg"
+        imageSrc="/Centre-Of-Maze.png"
         altText="UniMaze - Gameplay Snippet"
         captionText="UniMaze - Gameplay Snippet"
         containerHeight={containerDimensions.height}
