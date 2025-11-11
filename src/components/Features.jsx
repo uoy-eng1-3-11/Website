@@ -41,9 +41,8 @@ const Features = () => {
                 </div>
                 <div className='' style={{ height: '500px', position: 'relative' }} >
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-4 max-sm:text-xl'>🧩Maze</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Explore the vast maze based on the University of York's East Campus</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Explore the vast maze.</p>
                     <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Where the seasons change and the paths intertwine</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Escape from professors and find your way to freedom</p>
                     <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Stumble upon hidden events and surprises</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10  max-sm:pl-5 pt-6 max-sm:text-xl'>💥Events</h1>
