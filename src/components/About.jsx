@@ -41,7 +41,6 @@ const About = () => {
             <div style={{ height: '675px', position: 'relative' }} >
                 <div>
                   <h1 className='max-lg:text-md lg:text-3xl text-white font-bold pl-10 pt-6'>UniMaze: A brief overview</h1>
-                  <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-4'>⚪️ Based on the University of York's East Campus</p>
                   <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Built on Java 17 using LibGDX</p>
                   <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ 2D Graphics</p>
                   <p className='max-lg:text-xs lg:text-md text-violet-300 font-medium pl-10 pt-2'>⚪️ Smooth mechanics</p>
