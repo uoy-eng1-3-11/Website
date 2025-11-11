@@ -231,7 +231,7 @@ const CardNav = ({
           {/* Logo area */}
           <div className="logo-container flex flex-col items-center">
             <p className='pb-1 text-violet-800 text-4xl font-bold'>Team Aubergine</p>
-            <p className='-mt-3 text-blue-700 font-normal'>by Cohort 3 Group 11</p>
+            <p className='-mt-3 text-blue-700 font-normal'>Cohort 3 Group 11</p>
           </div>
 
           {/* CTA with electric border; thickness thins on small devices */}
