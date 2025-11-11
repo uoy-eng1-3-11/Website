@@ -41,14 +41,15 @@ const Features = () => {
                 </div>
                 <div className='' style={{ height: '500px', position: 'relative' }} >
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-4 max-sm:text-xl'>Maze</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Explore the vast maze.</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Where the seasons change and the paths intertwine</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Stumble upon hidden events and surprises</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Tile by tile movement</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Collision animation</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Scripted tiles for events</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Inventory system</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10  max-sm:pl-5 pt-6 max-sm:text-xl'>Events</h1>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Challenge is what excites!</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Earn rewards by successfully completing events</p>
-                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸The stakes are high! Don't miss out on the fun</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Items that give speed buff/debuff</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Talking UI for NPCs</p>
+                    <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-2 max-sm:text-xs'>🔸Easy expandability</p>
 
                     <h1 className='text-3xl text-white font-bold pl-10 max-sm:pl-5 pt-6 max-sm:text-xl'>High Quality Code</h1>
                     <p className='text-md text-violet-300 font-medium pl-10 max-sm:pl-5 pt-4 max-sm:text-xs'>🔸Adopting a new codebase seems daunting? Don't worry! </p>
